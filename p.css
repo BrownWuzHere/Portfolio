@@ -28,11 +28,9 @@ body {
   margin: 10px auto;
   border-radius: 15px;
   border: 1px rgba(255, 255, 255, 0.086) solid;
-
-  /* Flexbox for alignment */
   display: flex;
-  align-items: center; /* vertical alignment */
-  gap: 1px; /* space between icon and text */
+  align-items: center;
+  gap: 1px;
   padding: 0 20px;
 
   color: white;
@@ -41,7 +39,7 @@ body {
 }
 .text {
   display: flex;
-  flex-direction: column; /* stack Workspace above User */
+  flex-direction: column;
   line-height: 1.2;
   padding-left: 20px;
 }
@@ -54,7 +52,7 @@ body {
 
 .text .bottom {
   font-size: 12px;
-  color: #aaaaaaa0; /* lighter for distinction */
+  color: #aaaaaaa0;
 }
 .search {
   width: 190px;
@@ -131,6 +129,9 @@ body {
   color: white;
   font-size: 12.5px;
 }
+.options ul li:active {
+  color: #ffffff;
+}
 .divider {
   margin-top: 20px;
   margin-left: auto;
@@ -201,7 +202,7 @@ main {
 .cv-btn {
   position: fixed;
   top: 20px;
-  right: 20px; /* gives safe space from scrollbar */
+  right: 20px;
   padding: 8px 15px;
   border-radius: 8px;
   border: none;
@@ -367,7 +368,7 @@ main {
   gap: 30px;
 }
 .project-card {
-  width: 320px;
+  width: 300px;
   height: 250px;
   border: 1px solid white;
   border-radius: 15px;
@@ -402,6 +403,7 @@ main {
   cursor: pointer;
 }
 .project-card h2 {
+  text-align: justify;
   color: rgba(255, 255, 255, 0.941);
   text-align: center;
   padding-top: 20px;
@@ -410,7 +412,7 @@ main {
 }
 .project-card i {
   color: rgb(255, 255, 255);
-  padding-left: 138px;
+  padding-left: 130px;
   padding-top: 35px;
   font-size: 40px;
 }
@@ -447,15 +449,15 @@ main {
 }
 .skills-card i {
   padding-left: 110px;
-  padding-top: 35px;
+  padding-top: 10px;
   font-size: 40px;
 }
 .skills-card h2 {
   color: rgba(255, 255, 255, 0.805);
   text-align: center;
-  padding-top: 60px;
+  padding-top: 50px;
   letter-spacing: 1px;
-  padding-right: 10px;
+  padding-right: 5px;
   font-family: poppins;
   font-weight: 400;
 }
@@ -469,7 +471,10 @@ main {
   font-family: poppins;
 }
 .skills {
-  margin-top: 110px;
+  margin-top: 150px;
+}
+.skills-card p {
+  margin-left: 60px;
 }
 .skills-card:hover {
   transform: translateY(-10px);
@@ -505,6 +510,7 @@ main {
 }
 .contact {
   margin-top: 200px;
+  margin-bottom: 100px;
 }
 .contact-list h2 {
   letter-spacing: 1px;
@@ -552,14 +558,14 @@ main {
 }
 .contact-icon span:nth-child(2):hover {
   transform: rotate(-15deg);
-  background: linear-gradient(45deg, #25f4ee, #fe2c55, #000000);
+  background: linear-gradient(35deg, #2f25f4, #ff0033);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: transform 0.3s ease;
 }
 .contact-icon span:nth-child(3):hover {
   transform: rotate(20deg);
-  background: linear-gradient(30deg, #1da1f2, #0d8ddb);
+  background: linear-gradient(40deg, #039eff, #1a0eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: transform 0.3s ease;
